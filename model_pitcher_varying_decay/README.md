@@ -1,1 +1,0 @@
-• pitcher specific within-game decay parameters
