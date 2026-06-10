@@ -1,3 +1,5 @@
+Original code codebase from Ryan Brill:
+https://github.com/snoopryan123/TTO_/
 
 # Reproducing the results from _A Bayesian analysis of the time through the order penalty in baseball_ (`TTO`):
 
