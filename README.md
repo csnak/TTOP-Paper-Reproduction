@@ -7,7 +7,7 @@ https://github.com/snoopryan123/TTO_/
 ### This implementation uses a constant prior for the player quality estimator. 
 
 ### Get data:
-* download `retro_final_PA_1990-2020d.csv` (which was compiled in `TTO_/data_wrangling`), and `TTO_dataset_410.csv` and `TTO_dataset_510.csv` (which were compiled in `TTO_/data/create_design_matrix4_10.R` and `TTO_/data/create_design_matrix5_10.R`), from `https://upenn.app.box.com/v/retrosheet-pa-1990-2000`, and store these datasets in`TTO_/data`
+* download `retro_final_PA_1990-2020d.csv` (which was compiled in `TTO_/data_wrangling`), and `TTO_dataset_410.csv` and `TTO_dataset_510.csv` (which were compiled in `TTO_/data/create_design_matrix4_10.R` and `TTO_/data/create_design_matrix5_10.R`), from `https://upenn.app.box.com/v/retrosheet-pa-1990-2000`. Run `create_design_matrix5_10_cons_prior.R` to generate `dataset_510_cons.csv`. Store these datasets in `TTO_/data`
 
 ### Fit the bayesian model used in the `TTO` paper to observed data:
 * run the Bayesian model (the `Stan` file `TTO_/model_positive_slope_prior/tto9_PF_BL_linePosSlope.stan`) for multiple years on a cluster via the array job `TTO_/model_positive_slope_prior/run_obs_fitModel_obs_AJ.sh`, which runs `TTO_/model_positive_slope_prior/obs_fitModel.R`
